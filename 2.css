@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes najazd {
+    0%{
+        background: white;
+        color: red;
+    }
+    20%{
+        background: darkblue;
+        color: lightcoral;
+        font-size: 20px;
+    }
+    50%{
+        background: lightgrey;
+        color: darkcyan;
+        font-size: 70rem;
+    }
+    70%{
+        background: greenyellow;
+        color: burlywood;
+        font-size: 50px;
+    }
+    100%{
+        background: #5adeff;
+        color: black;
+        font-size: 40px;
+    }
+}
+
+.all{
+    height: 100vh;
+    width: 100vw;
+    background: lightpink;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 2f 3fr);
+    grid-template-areas: 
+    "c a a b b b"
+    "c d d d e e"
+    "c f f f g g"
+    "c h i i j j";
+}
+
+p:empty{
+    margin: 20px;
+    height: 5vh;
+    width: 20vw;
+    background: darkgreen;
+}
+
+.zm:checked{
+    height: 50%;
+    width: 50%;
+    outline: 5px solid lightsalmon;
+}
+
+.cytat::before{
+    content: "„";
+}
+
+.cytat::after{
+    content: "”";
+}
+
+.zad{
+    margin: 5px;
+    background: #5adeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a{
+    grid-area: a;
+    justify-content: space-between;
+    padding: 10%;
+    font-size: 20px;
+}
+
+.b{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+}
+
+.zdj{
+    height: 168px;
+    width: 300px;
+}
+
+.inny::selection{
+    background: violet;
+    color: #5aaeff;
+}
+
+.c{
+    grid-area:c ;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 40px;
+}
+
+.c:hover{
+    animation: najazd 2.5s infinite;
+}
+
+.d{
+    grid-area:d ;
+    display: flex;
+    text-align: center;
+    /*font-size: 1.7rem;*/
+}
+
+.e{
+    text-align: center;
+    grid-area:e ;
+}
+
+.vizited{
+    color: tomato;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.vizited:visited{
+    color: darkorchid;
+}
+
+.link{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.link:active{
+    color: chartreuse;
+    font-size: 20px;
+    border: 1px solid red;
+    background: gray;
+}
+
+.f{
+    grid-area: f;
+    display: flex;
+    justify-content: space-around;
+}
+
+.g{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    grid-area: g;
+}
+
+.lista-para .para:nth-child(2n+0){
+    color: rgb(11, 138, 53);
+}
+
+.lista-para .para:nth-child(2n+1){
+    color: mediumvioletred;
+}
+
+.h{
+    justify-content: space-around;
+    grid-area: h ;
+    font-size:15px;
+}
+
+.pogrubienie:hover{
+    font-weight: 1000;
+}
+
+.pogrubienie:hover::first-line{
+    background: darkblue;
+    color: orangered;
+}
+
+.i{
+    grid-area: i ;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.j{
+    grid-area: j ;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.green:checked{
+    outline: 4px solid green;
+}
+
+.red:checked{
+    outline: 4px solid red;
+}
+
+.blue:checked{
+    outline: 4px solid blue;
+}
